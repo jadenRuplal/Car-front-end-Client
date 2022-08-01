@@ -59,7 +59,7 @@ router.post('/cars', requireToken, (req, res, next) => {
 	// set owner of new car to be current user
 	req.body.car.owner = req.user.id
 
-	car.create(req.body.car)
+	Car.create(req.body.car)
 		// respond to succesful `create` with status 201 and JSON of new "car"
 		.then((car) => {
 			res.status(201).json({ car: car.toObject() })

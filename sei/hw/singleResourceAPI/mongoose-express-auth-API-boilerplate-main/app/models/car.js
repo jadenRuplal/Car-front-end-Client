@@ -10,6 +10,10 @@ const carSchema = new mongoose.Schema(
 			type: String,
 			required: true,
 		},
+        year: {
+			type: Number,
+			required: true,
+		},
 		owner: {
 			type: mongoose.Schema.Types.ObjectId,
 			ref: 'User',
