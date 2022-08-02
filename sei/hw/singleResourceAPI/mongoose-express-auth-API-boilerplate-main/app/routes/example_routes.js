@@ -13,7 +13,7 @@ const customErrors = require('../../lib/custom_errors')
 // we'll use this function to send 404 when non-existant document is requested
 const handle404 = customErrors.handle404
 // we'll use this function to send 401 when a user tries to modify a resource
-// that's owned by someone else
+// that's owned y someone else
 const requireOwnership = customErrors.requireOwnership
 
 // this is middleware that will remove blank fields from `req.body`, e.g.
